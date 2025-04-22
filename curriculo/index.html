@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poetsen+One&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estilo.css" />
@@ -22,6 +25,7 @@
     </header>
     <section class="descricao">
       <p>descriçao sobre voce</p>
+      <button id="botao">continue aqui</button>
     </section>
     <section class="conteudo">
         <div class="bloco" >
@@ -35,14 +39,15 @@
         </div>
 
         <div class="bloco">
-            <h2>participaçao em progetos e eventos</h2>
+            <h2>participaçao em projetos e eventos</h2>
             <p>informe sobre projetos e eventos que participou</p>
         </div>
     </section>
 
     <section class="falacomigo">
       <h2>interessado no meu curriculo?</h2>
-      <form>
+      <form action="https://formspree.io/f/mzzpvpwz"
+      method="POST">
         <label for="email">email:</label>
         <input type="email" id="email" name="email" required>
         <label for="telefone">telefone:</label>
@@ -53,10 +58,12 @@
     </section>
 
     <section class="conteudo">
-        <div class="bloco">
+        <div class="bloco" id="mais-conteudo">
+          <div id="card">
           <h2>sobre mim</h2>
           <p>adicione aqui informaçoes sobre quem voce é, suas paixoes e objetivos</p>
         </div>
+       </div> 
 
         <div class="bloco">
           <h2>meu canal</h2><iframe width="390" height="315" src="https://www.youtube.com/embed/IiHV4UgsvyU?si=xyBUioE3-LQpESdr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -66,5 +73,7 @@
         <h2>mensagem positiva</h2>
         <p>o sucesso e a soma de pequenos esforços</p>
     </section>
+
+    <script src="index.js"></script>
   </body>
 </html>
